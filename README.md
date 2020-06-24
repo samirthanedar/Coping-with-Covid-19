@@ -2,7 +2,7 @@
 
 ## Overview
 
-Covid-19 needs no introduction at this point. We are the middle of a pandemic and it has greatly affected all of our lives. Thorughout all of this, how are people coping mentally with Covid-19? This gets addressed in the media but this is usually something that we all deal with by ourselves and behind closed doors. 
+Covid-19 needs no introduction. As a country, we are over three months into a scary pandemic. But this has been silently spreading worldwide since December, 2019. Luckily my family and I have been spared from the worst of the disease and we’re all healthy. However, as the infectious disease progressed, I’ve felt strong emotions and worried about the future. Once the government shutdown started, I felt a lack of control and complete uncertainty for what would happen next. Although this was anecdotal, I wondered how others were coping mentally and emotionally with Covid-19. This gets addressed in the media but this is usually something that we all deal with by ourselves and behind closed doors. 
 
 
 ## Objective
@@ -27,19 +27,19 @@ I used TF-IDF to vectorize the data and then NMF for dimensionality reduction. H
 
 ## Findings:
 
-From the document-topic matrix taken from the NMF model, I took a sum of each topic column to get a value representing how often that topic was mentioned in the whole corpus. We can call this relative importance of each topic. Then I split up the data by month, so we can see how the relative importance of each topic changed over time.
+From the document-topic matrix taken from the NMF model, I took a sum of each topic column to get a value representing how often that topic was mentioned in the whole corpus. We can call this the "relative importance" of each topic. Then I split up the data by month, so we can see how the relative importance of each topic changed over time.
 
-In December and January, the world is only talking about the Chinese outbreak in Wuhan. In February, people begin to also discuss the outbreak in Italy. As the world starts to worry about stopping the spread, events around the world start to get cancelled. In March, the anger topic reaches it's peak. This topic is largely just people expressing their anger at Covid-19 by using several curse words. By April and May, people have redirected their anger towards Trump and have been discussing his handling of the pandemic. Also, new normal topics like working from home and wearing a mask are discussed as well. 
+In December and January, the world is only talking about the Chinese outbreak in Wuhan. In February, people begin to also discuss the outbreak in Italy. As the world starts to worry about stopping the spread, events around the world start to get cancelled. In March, the anger topic reaches it's peak. This topic is largely just people expressing their anger at Covid-19 by using several curse words. By April and May, people have redirected their anger towards Trump and many tweets discuss his handling of the pandemic. Also, new normal topics like working from home and wearing a mask are discussed as well. 
 
-It's interesting to see that solutions such as vaccines and science such as epidemiology is not discussed too much. Many people are angry and choose to focus their thoughts on criticizing others. Also, discussions about a second wave peak in February before the first wave really starts in the U.S. which is strange. Finally, you can see a lot of people dealing with their grief along the same patterns as the 5 stages of grief. The 5 stages of grief is a framework for describing how people recover from a loss of a loved one. Many people are dealing with the loss of normal life and are expressing their anger with that. In May, you see the anger topic decreasing it's relative importance. 
+It's interesting to see that solutions such as vaccines and science such as epidemiology are not discussed too much. Many people are angry and choose to focus their thoughts on criticizing others. Also, discussions about a second wave peak in February before the first wave really starts in the U.S. which is strange. Finally, you can see a lot of people dealing with their grief along the same patterns as the 5 stages of grief. The 5 stages of grief is a framework for describing the stages people go through while they are recovering from a loss of a loved one. Many people are dealing with the loss of normal life and are expressing their anger with that.
 
 
 ## Navigating the Project Files:
 
-You should follow the following workflow when going through my work to repeat the results: 
-1. Start at project_4_data_collection_and_topic_modeling.ipynb to see my many attempts at topic modeling 
-1. Next go to project_4_topics_per_month.ipynb to see the different topics per month
-1. Finally, go to project_04_visualization.ipynb to see the visualizations of how the topics changed per month.
+You should follow the following workflow when going through the notebooks to repeat the results: 
+1. Start at 01_data_collection_and_topic_modeling.ipynb to see my experimentation with topic modeling 
+1. Next go to 02_topics_per_month.ipynb to see the different topics per month
+1. Finally, go to 03_visualization.ipynb to see the visualizations of how the topics changed per month.
 
 I've also included a pickle file of the dataset and the final NMF model to help you reproduce the results.
 
